@@ -45,6 +45,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)Scripts;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -80,12 +81,14 @@
   <ItemGroup>
     <ClCompile Include="Scripts\GraphicCore\Color.cpp" />
     <ClCompile Include="Scripts\GraphicCore\Image.cpp" />
+    <ClCompile Include="Scripts\Math\Vector2.cpp" />
     <ClCompile Include="Scripts\Program.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scripts\GraphicCore\Color.h" />
     <ClInclude Include="Scripts\GraphicCore\Image.h" />
     <ClInclude Include="Scripts\Include\GraphicUtil.h" />
+    <ClInclude Include="Scripts\Math\Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
