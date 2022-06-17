@@ -13,7 +13,8 @@ int main()
 		}
 	}
 
-	img->DrawLine(Vector2i(10, 50), Vector2i(200, 10), Color(0, 0, 0));
+	img->DrawLine(Vector2i(40, 50), Vector2i(200, 10), Color(0, 0, 0));
+	img->DrawClipLine(Vector2i(40, 50), Vector2i(200, 10), 10, 80, 20, 100, Color(255, 0, 0));
 
 	img->WriteToFile("line.ppm");
 	

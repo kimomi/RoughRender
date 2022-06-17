@@ -52,5 +52,9 @@ public:
 	/// <param name="startPoint"></param>
 	/// <param name="endPoint"></param>
 	void DrawLine(Vector2i startPoint, Vector2i endPoint, const Color& color);
+
+	void DrawClipLine(Vector2i startPoint, Vector2i endPoint, uint32_t xmin, uint32_t xmax, uint32_t ymin, uint32_t ymax, const Color& color);
+
+	void DrawRect(Vector2i lb, Vector2i rt, const Color& color);
 };
 
